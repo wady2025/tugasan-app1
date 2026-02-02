@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Tugasan Baru"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Customer Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelanggan *"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/etCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan nama pelanggan"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Location -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi *"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat atau lokasi"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Task Type -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Tugasan *"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="5dp" />
+
+        <Spinner
+            android:id="@+id/spinnerTaskType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/spinner_background"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterangan Tugasan *"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Terangkan masalah atau kerja yang dilakukan..."
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Status -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status *"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="5dp" />
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/spinner_background"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Camera Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F8F9FA"
+            android:padding="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📷 Gambar Dokumentasi"
+                android:textStyle="bold"
+                android:textColor="#555555"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:id="@+id/btnTakePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📸 Ambil Gambar"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_primary"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvPhotoCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 gambar ditambah"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Notes -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota Tambahan"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="Catatan tambahan atau tindakan susulan..."
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batal"
+                android:textColor="#666666"
+                android:background="@drawable/button_secondary"
+                android:padding="12dp"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💾 Simpan"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_primary"
+                android:padding="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

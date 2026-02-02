@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!-- Customer Name -->
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔧 Nama Pelanggan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#667EEA"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Task Type -->
+        <TextView
+            android:id="@+id/tvTaskType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis: Pemasangan"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="5dp" />
+
+        <!-- Location -->
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 Lokasi"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="5dp" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅 01/01/2024 • 10:00"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterangan tugasan"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Status and Photo Count Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selesai"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#28A745"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvPhotoCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📷 0 gambar"
+                android:textSize="13sp"
+                android:textColor="#999999" />
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnView"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Lihat"
+                android:textSize="13sp"
+                android:textColor="#667EEA"
+                android:background="@drawable/button_outline"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="🗑️ Padam"
+                android:textSize="13sp"
+                android:textColor="#DC3545"
+                android:background="@drawable/button_outline_red"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

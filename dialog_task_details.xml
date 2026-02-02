@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Butiran Tugasan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Customer -->
+        <TextView
+            android:id="@+id/tvDetailCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pelanggan: "
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Location -->
+        <TextView
+            android:id="@+id/tvDetailLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi: "
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Type -->
+        <TextView
+            android:id="@+id/tvDetailType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis: "
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/tvDetailDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarikh: "
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/tvDetailStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: "
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvDetailDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterangan:\n"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Notes -->
+        <TextView
+            android:id="@+id/tvDetailNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nota:\n"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone" />
+
+        <!-- Photos Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📷 Gambar Dokumentasi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:layout_marginBottom="10dp" />
+
+        <ListView
+            android:id="@+id/lvPhotos"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Close Button -->
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tutup"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_primary"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

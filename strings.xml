@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rekod Tugasan Juruteknik</string>
+
+    <!-- Task Types -->
+    <string-array name="task_types">
+        <item>Pemasangan Baru</item>
+        <item>Pembaikan &amp; Servis</item>
+        <item>Penyelenggaraan</item>
+        <item>Upgrade Sistem</item>
+        <item>Troubleshooting</item>
+        <item>Lain-lain</item>
+    </string-array>
+
+    <!-- Task Status -->
+    <string-array name="task_status">
+        <item>Pending</item>
+        <item>Dalam Proses</item>
+        <item>Selesai</item>
+    </string-array>
+</resources>
